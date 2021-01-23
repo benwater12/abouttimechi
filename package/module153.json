@@ -1,0 +1,49 @@
+{
+  "name": "about-time",
+  "title": "About Time",
+  "description": "",
+  "version": "0.1.53",
+  "author": "@tposney",
+  "scripts": [],
+  "esmodules": ["about-time.js", "module/display/Display.js"],
+  "styles": ["about-time.css"],
+  "packs": [],
+  "languages": [
+    {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+    },
+    {
+        "lang": "ko",
+        "name": "Korean",
+        "path": "lang/ko.json"
+    },
+    {
+    	"lang": "ja",
+        "name": " 日本語",
+        "path": "lang/ja.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español (Spanish)",
+      "path": "lang/es.json"
+    }
+  ],
+  "minimumCoreVersion": "0.4.5",
+  "compatibleCoreVersion": "0.7.0",
+  "socket": true,
+  "url": "https://gitlab.com/tposney/about-time",
+  "manifest": "https://gitlab.com/tposney/about-time/raw/master/package/module153.json",
+  "download": "https://gitlab.com/tposney/about-time/raw/master/package/about-time-v0.1.53.zip"
+}
