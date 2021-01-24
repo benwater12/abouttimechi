@@ -59,5 +59,6 @@
   "compatibleCoreVersion": "0.7.3",
   "socket": true,
   "url": "https://github.com/benwater12/abouttimechi",
-  "manifest": "https://raw.githubusercontent.com/benwater12/abouttimechi/main/src/module.json"
+  "manifest": "https://raw.githubusercontent.com/benwater12/abouttimechi/main/src/module.json",
+  "download": "https://github.com/benwater12/abouttimechi/archive/main.zip"
 }
