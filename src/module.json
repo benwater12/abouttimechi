@@ -2,7 +2,7 @@
   "name": "about-time",
   "title": "About Time",
   "description": "an adaptation from about time, origin creator @tposney",
-  "version": "0.1.62chi",
+  "version": "0.1.6ˇchi",
   "author": "@tposney",
   "scripts": [],
   "esmodules": ["about-time.js", "module/display/Display.js"],
@@ -58,7 +58,7 @@
   "minimumCoreVersion": "0.7.2",
   "compatibleCoreVersion": "0.7.3",
   "socket": true,
-  "url": "https://github.com/benwater12/breaktimechi",
+  "url": "https://github.com/benwater12/abouttimechi",
   "manifest": "https://raw.githubusercontent.com/benwater12/abouttimechi/main/src/module.json",
   "download": "https://gitlab.com/tposney/about-time/raw/master/package/about-time-v0.1.62.zip"
 }
