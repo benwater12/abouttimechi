@@ -2,7 +2,7 @@
   "name": "about-time",
   "title": "About Time",
   "description": "an adaptation from about time, origin creator @tposney",
-  "version": "0.1.6ˇchi",
+  "version": "0.1.63chi",
   "author": "@tposney",
   "scripts": [],
   "esmodules": ["about-time.js", "module/display/Display.js"],
