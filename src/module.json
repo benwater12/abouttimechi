@@ -1,8 +1,8 @@
 {
   "name": "about-time",
   "title": "About Time",
-  "description": "",
-  "version": "0.1.62",
+  "description": "an adaptation from about time, origin creator @tposney",
+  "version": "0.1.62chi",
   "author": "@tposney",
   "scripts": [],
   "esmodules": ["about-time.js", "module/display/Display.js"],
@@ -48,12 +48,17 @@
       "lang": "it",
       "name": "Italian",
       "path": "lang/it.json"
+    },
+    {
+      "lang": "chi",
+      "name": "中文",
+      "path": "lang/chi.json"
     }
   ],
   "minimumCoreVersion": "0.7.2",
   "compatibleCoreVersion": "0.7.3",
   "socket": true,
-  "url": "https://gitlab.com/tposney/about-time",
-  "manifest": "https://gitlab.com/tposney/about-time/raw/master/package/module.json",
+  "url": "https://github.com/benwater12/breaktimechi",
+  "manifest": "https://raw.githubusercontent.com/benwater12/abouttimechi/main/src/module.json",
   "download": "https://gitlab.com/tposney/about-time/raw/master/package/about-time-v0.1.62.zip"
 }
