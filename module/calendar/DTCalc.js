@@ -1,3 +1,29 @@
+
+export const Chinesecal = {
+    "month_len": {
+        "一月": { days: [31, 31] },
+        "二月": { days: [28, 29] },
+        "三月": { days: [31, 31] },
+        "四月": { days: [30, 30] },
+        "五月": { days: [31, 31] },
+        "六月": { days: [30, 30] },
+        "七月": { days: [31, 31] },
+        "八月": { days: [31, 31] },
+        "九月": { days: [30, 30] },
+        "十月": { days: [31, 31] },
+        "十一月": { days: [30, 30] },
+        "十二月": { days: [31, 31] },
+    },
+    "leap_year_rule": "(year) => Math.floor(year / 4) - Math.floor(year / 100) + Math.floor(year / 400)",
+    "weekdays": ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+    "clock_start_year": 1970,
+    "first_day": 0,
+    "notes": {},
+    "hours_per_day": 24,
+    "seconds_per_minute": 60,
+    "minutes_per_hour": 60,
+    "has_year_0": false
+};
 export const Gregorian = {
     "month_len": {
         "January": { days: [31, 31] },
@@ -259,7 +285,8 @@ export const calendars = {
     "Golarian": Golarian,
     "Exandrian": Exandrian,
     "Glorantha": Glorantha,
-    "Eberron": Eberron
+    "Eberron": Eberron,
+    "中文日歷": Chinesecal,
 };
 export class DTCalc {
     static changeDefaultCalendar() {
