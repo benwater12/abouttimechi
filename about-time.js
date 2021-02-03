@@ -10,27 +10,25 @@
  * 					 determines how others may use and modify your module
  */
 // Import TypeScript modules
-import { registerSettings } from './module/settings';
-import { preloadTemplates } from './module/preloadTemplates';
-import { ElapsedTime } from './module/ElapsedTime';
-import { PseudoClock } from './module/PseudoClock';
-import { DTMod } from './module/calendar/DTMod';
-import { runDateTimeTests } from "./module/calendar/DTSTests"
-import { DTCalc } from './module/calendar/DTCalc';
-import { calendars } from './module/calendar/DTCalc';
-import { DateTime } from './module/calendar/DateTime';
-import {SimpleCalendarDisplay} from "./module/display/Display"
-import { CountDown } from './module/display/CountDown';
-import { CalendarEditor } from './module/calendarEdtior/CalendarEditor';
-import { RealTimeCountDown } from './module/display/RealTimeCountDown';
-
+import { registerSettings } from "./module/settings.js";
+import { preloadTemplates } from "./module/preloadTemplates.js";
+import { ElapsedTime } from "./module/ElapsedTime.js";
+import { PseudoClock } from "./module/PseudoClock.js";
+import { DTMod } from "./module/calendar/DTMod.js";
+import { runDateTimeTests } from "./module/calendar/DTSTests.js";
+import { DTCalc } from "./module/calendar/DTCalc.js";
+import { calendars } from "./module/calendar/DTCalc.js";
+import { DateTime } from "./module/calendar/DateTime.js";
+import { SimpleCalendarDisplay } from "./module/display/Display.js";
+import { CountDown } from "./module/display/CountDown.js";
+import { CalendarEditor } from "./module/calendarEdtior/CalendarEditor.js";
+import { RealTimeCountDown } from "./module/display/RealTimeCountDown.js";
 /* ------------------------------------ */
 /* Initialize module					*/
 /* ------------------------------------ */
 Hooks.once('init', async function () {
     console.log('about-time | Initializing about-time');
     // Assign custom classes and constants here
-
     // Register custom module settings
     registerSettings();
     // Preload Handlebars templates
@@ -44,7 +42,6 @@ let operations;
 Hooks.once('setup', function () {
     // Do anything after initialization but before
     // ready
-
     operations = {
         isMaster: () => PseudoClock.isMaster,
         isRunning: PseudoClock.isRunning,
@@ -72,10 +69,10 @@ Hooks.once('setup', function () {
         DMf: DTMod.create,
         DTf: DateTime.create,
         DTNow: DateTime.now,
-        calendars: calendars, 
+        calendars: calendars,
         _notifyEvent: PseudoClock.notifyEvent,
         startRunning: PseudoClock.startRealTime,
-        stopRunning : PseudoClock.stopRealTime,
+        stopRunning: PseudoClock.stopRealTime,
         mutiny: PseudoClock.mutiny,
         advanceClock: ElapsedTime.advanceClock,
         advanceTime: ElapsedTime.advanceTime,
@@ -98,13 +95,11 @@ Hooks.once('setup', function () {
     game.Gametime = operations;
     //@ts-ignore
     window.Gametime = operations;
-
 });
 /* ------------------------------------ */
 /* When ready							*/
 /* ------------------------------------ */
 Hooks.once('ready', function () {
-
     // emergency clearing of the queue ElapsedTime._flushQueue();
     DTCalc.loadUserCalendar();
     DTCalc.createFromData();
@@ -113,14 +108,12 @@ Hooks.once('ready', function () {
     if (ElapsedTime.debug) {
         runDateTimeTests();
     }
-
     /*
     new CalendarEditor(
-        calendars[Object.keys(calendars)[game.settings.get("about-time", "calendar")]], 
+        calendars[Object.keys(calendars)[game.settings.get("about-time", "calendar")]],
         {editable: true, closeOnSubmit: true, submitOnClose: false, submitOnUnfocus: false}
     ).render(false);
     */
     //@ts-ignore
     window.CalendarEditor = CalendarEditor;
 });
-
