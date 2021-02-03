@@ -286,7 +286,7 @@ export const calendars = {
     "Exandrian": Exandrian,
     "Glorantha": Glorantha,
     "Eberron": Eberron,
-    "中文日歷": Chinesecal,
+    "中文日曆": Chinesecal,
 };
 export class DTCalc {
     static changeDefaultCalendar() {
