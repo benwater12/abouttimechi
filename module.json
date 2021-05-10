@@ -50,9 +50,9 @@
       "path": "lang/it.json"
     },
     {
-      "lang": "zh",
-      "name": "中文",
-      "path": "lang/zh.json"
+       "lang": "zh-tw",
+       "name": "正體中文",
+       "path": "lang/zh-tw.json"
     }
   ],
   "minimumCoreVersion": "0.7.2",
