@@ -2,7 +2,7 @@
   "name": "about-time",
   "title": "About Time",
   "description": "an adaptation from about time, origin creator @tposney",
-  "version": "0.1.63chi",
+  "version": "0.1.64chi",
   "author": "@tposney",
   "scripts": [],
   "esmodules": ["about-time.js", "module/display/Display.js"],
@@ -50,9 +50,9 @@
       "path": "lang/it.json"
     },
     {
-      "lang": "cn",
+      "lang": "zh",
       "name": "中文",
-      "path": "lang/chi.json"
+      "path": "lang/zh.json"
     }
   ],
   "minimumCoreVersion": "0.7.2",
