@@ -1,6 +1,6 @@
 {
   "I18N.LANGUAGE": "中文",
-  "I18N.MAINTAINERS": "@tposney",
+  "I18N.MAINTAINERS": "benwater12",
 
   "about-time.notMaster": "不是主要控制時間的GM - 終止活動",
   "about-time.GTM.name": "更新遊戲時間和現實時間的倍數",
